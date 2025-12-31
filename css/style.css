@@ -336,7 +336,7 @@ a {
     color: var(--blue);
 }
 
-.card-rating .fa-regular.fa-star {
+.card-rating .fa-solid.fa-star.empty {
     color: var(--bg-grey);
 }
 
