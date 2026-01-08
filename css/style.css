@@ -512,15 +512,30 @@ a {
     .main-nav {
         width: 100%;
         margin-top: 15px;
+        gap: 0;
     }
 
     .nav-link {
         flex: 1;
+        margin: 0;
         text-align: center;
+        padding: 16px 0;
+        position: relative;
+        border-bottom: 2px solid var(--bg-grey);
+        display: block;
     }
 
+    
     .nav-link::after {
-        bottom: -3px;
+        bottom: -1px;
+        content: "";
+        position:absolute;
+        left: 0;
+        top: auto;
+        width: 0;
+        height: 2px;
+        background: var(--blue);
+        transition: width 0.2s ease;
     }
 
     .hero,
